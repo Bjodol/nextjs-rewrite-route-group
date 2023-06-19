@@ -8,7 +8,7 @@ export default function Home() {
       Currently on route group A!
       {ssr}
       <Link href="/b">Go to route group (b) with direct link</Link>
-      <Link href="/b-rewrite?cake=banana">
+      <Link href="/b-rewrite?cake=banana" prefetch={false}>
         Go to route group (b) with rewritten link
       </Link>
     </main>
