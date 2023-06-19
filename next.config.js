@@ -15,8 +15,6 @@ const nextConfig = {
           ],
           destination: "/:tag/:path",
         },
-      ],
-      afterFiles: [
         {
           source: "/:tag/a-rewrite/:path*",
           destination: "/:tag/a/:path*",
@@ -26,6 +24,7 @@ const nextConfig = {
           destination: "/:tag/b/:path*",
         },
       ],
+      afterFiles: [],
     };
   },
 };
